@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #0ff;
+            color: #242626
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #242626;
+            color: #0ff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #242626;
+        }
+        nav a {
+            background-color: #242626;
+            color: #0ff;
+            text-decoration: none;
+            padding: 1em;
+        }
+        nav a:hover {
+            background-color: #027575;
+        }
+/* Стили для контейнера */
+.container {
+    max-width: 600px;
+    margin: 2em auto;
+    background-color: #02e0e0;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 
+    0 5px 10px rgba(0, 0, 0, 0.2), 
+    0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для формы */
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитывать padding в ширине */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+ footer {
+            text-align: center;
+            background-color: #242626;
+            color: #0ff;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="video.html">Видеоуроки</a>
+        </nav>
+    </header>
+<p>Наши контактные данные:<br>
+ • Электронная почта: n4419574@gmail.com<br>
+ • Телефон: +7 (919) 232-44-43<br>
+ • Адрес: г. Воронеж, ул. 20-летия Октября, 84<br>
+<br>
+Часы работы:<br>
+Понедельник — Пятница: с 9:00 до 18:00<br>
+Суббота — Воскресенье: выходные<br>
+<br
+Форма обратной связи<br>
+Оставьте сообщение через форму ниже, и мы свяжемся с вами в ближайшее время</p>
+    <div class="container">
+
+        <section class="contact-form">
+            <h2>Свяжитесь с нами</h2>
+            <form action="mailto:nikitakashch16@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 3DCraft.com Все права защищены.</p>
+    </footer>
+</body>
+</html>
