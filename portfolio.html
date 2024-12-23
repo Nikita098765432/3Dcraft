@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+     <style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #0ff;
+            color: #242626
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #242626;
+            color: #0ff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #242626;
+        }
+        nav a {
+            background-color: #242626;
+            color: #0ff;
+            text-decoration: none;
+            padding: 1em;
+        }
+        nav a:hover {
+            background-color: #027575;
+        }
+   /* Основные стили для контейнера */
+.container {
+    max-width: 1000px;
+    margin: 2em auto;
+    background-color: #02e0e0;
+    padding: 2em;
+    border-radius: 10px;
+   box-shadow: 
+    0 5px 10px rgba(0, 0, 0, 0.2), 
+    0 15px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Стили для галереи портфолио */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Стили для каждой карточки проекта */
+.portfolio-item {
+    width: 300px;
+    background-color: #03adad;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 
+    0 5px 10px rgba(0, 0, 0, 0.2), 
+    0 15px 30px rgba(0, 0, 0, 0.3); /* Тень для карточки */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px); /* Эффект поднятия карточки */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.portfolio-item h3 {
+    color: #000;
+}
+
+.portfolio-item p {
+    color: #000;
+}
+
+/* Стили для кнопки */
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    background-color: #242626;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444747;
+    transform: scale(1.05);
+}
+
+/* Анимация при наведении на карточку */
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+ footer {
+            text-align: center;
+            background-color: #242626;
+            color: #0ff;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Портфолио</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+            <a href="video.html">Видеоуроки</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Наши проекты</h2>
+        <div class="portfolio-gallery">
+        <div class="products-container">
+            <!-- Проект 1 -->
+            <div class="portfolio-item">
+                <img src="пр.png" alt="Проект 1">
+                <h3>Проект 1</h3>
+                <p>AstraCore 3000 - Компьютер будущего</p>
+                <a href="project1-details.html" class="btn">Подробнее</a>
+                <div class="product-card" data-id="1" data-name="Проект 1" data-price="15000">
+                <p>Цена: 15000 руб</p>
+                
+            </div>
+            </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="portfolio-item">
+                <img src="модель.png" alt="Проект 2">
+                <h3>Проект 2</h3>
+                <p>Shadow Lynx — это высокополигональная 3D-модель фантастического животного</p>
+                <a href="project2-details.html" class="btn">Подробнее</a>
+                <div class="product-card" data-id="2" data-name="Проект 2" data-price="10000">
+                <p>Цена: 10000 руб </p>
+                
+            </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="portfolio-item">
+                <img src="лого.png" alt="Проект 3">
+                <h3>Проект 3</h3>
+                <p>IONIX - логотип для каждого</p>
+                <a href="project3-details.html" class="btn">Подробнее</a>
+                <div class="product-card" data-id="3" data-name="Проект 3" data-price="7000">
+                <p>Цена: 7000 руб </p>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2024 3DCraft.com Все права защищены.</p>
+    </footer>
+<script src="cart.js"></script>
+</body>
+</html>

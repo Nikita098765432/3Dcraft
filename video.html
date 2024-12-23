@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеоурок</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0ff;
+            color: #242626;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+  
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #242626;
+        }
+        nav a {
+            background-color: #242626;
+            color: #0ff;
+            text-decoration: none;
+            padding: 1em;
+        }
+        nav a:hover {
+            background-color: #027575;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .card {
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 350px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card a {
+            text-decoration: none;
+            color: #242626;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+            color: #242626;
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Видеоуроки</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+            
+        </nav>
+    </header>
+    <div class="gallery">
+        <!-- Первая карточка -->
+        <div class="card">
+            <img src="photo1.jpg" alt="Описание фото 1">
+            <a href="https://rutube.ru/video/f836f433d9f098a809d13f5f9c11631f/?r=wd" target="_blank">Урок 1: Основы 3D-моделирования</a>
+        </div>
+        <!-- Вторая карточка -->
+        <div class="card">
+            <img src="photo2.jpg" alt="Описание фото 2">
+            <a href="https://rutube.ru/video/d1f0ab83d5e839c0ea78706e22d4dece/?r=wd"_blank">Урок 2: Работа с текстурами</a>
+        </div>
+        <!-- Третья карточка -->
+        <div class="card">
+            <img src="photo3.jpg" alt="Описание фото 3">
+            <a href="https://rutube.ru/video/11df9ef7d5c0462d3c5ab79f42072433/?r=wd" target="_blank">Урок 3: Создание анимации</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 3DCraft.com Все права защищены.</p>
+    </footer>
+</body>
+</html>

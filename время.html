@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время и Дата</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+    </header>
+
+    <!-- Блок с датой и временем -->
+    <div id="datetime-container">
+        <p id="datetime"></p>
+    </div>
+
+    <script>
+        // Получение текущей даты и времени
+        function getCurrentDateTime() {
+            const now = new Date();
+
+            // Опции для форматирования
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+
+            // Форматируем строку для России
+            const formattedDateTime = now.toLocaleString('ru-RU', options);
+
+            // Вставляем в блок
+            document.getElementById('datetime').textContent = formattedDateTime;
+        }
+
+        getCurrentDateTime();
+    </script>
+</body>
+</html>
